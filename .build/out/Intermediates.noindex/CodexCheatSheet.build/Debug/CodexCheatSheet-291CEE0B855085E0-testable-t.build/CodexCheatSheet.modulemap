@@ -1,4 +1,0 @@
-module CodexCheatSheet {
-header "CodexCheatSheet-Swift.h"
-export *
-}
