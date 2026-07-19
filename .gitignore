@@ -1,4 +1,26 @@
+# macOS
+.DS_Store
+
+# Swift / Xcode
 .build/
 .swiftpm/
-.DS_Store
 *.xcodeproj
+*.xcworkspace
+DerivedData/
+
+# Env & secrets
+.env
+.env.*
+
+# Python (if used later)
+__pycache__/
+.venv/
+venv/
+
+# Node (if used later)
+node_modules/
+
+# Scratch
+logs/
+tmp/
+*.log
