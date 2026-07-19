@@ -1,0 +1,679 @@
+[
+  {
+    "isFramework" : true,
+    "moduleName" : "Accessibility",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-3EFHFVO14OH9Z.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AppKit",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-3BAECGXX54DJO.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ColorSync",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-2VRRTKR05TS9V.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Combine",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Combine-1B8FR0GGMWO2P.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreAudio",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-DV58PO4OD3M.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreData",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-3UDVKSLLI2J6L.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-O6T4DHCWE9C0.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreGraphics",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-1K96W9C1TAGRX.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreImage",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-3II8GG18OJ4SY.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreMedia",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-5UVXRJPBH847.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreText",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-3EEPR7QK626YN.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreTransferable",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-2S96ZG101Y2UO.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreVideo",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-2KYD8UUW8K57K.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Darwin",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-3J921XQZ21NRR.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DataDetection",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-2E6B0U63UE92B.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DeveloperToolsSupport",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-1PZJJDGI2OOM2.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Dispatch",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-1LA9NS11UQ71.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Foundation",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-14XK0E34I5AAT.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "IOKit",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-3FZM0904P7Q6V.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ImageIO",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-O3VL0J700B9Z.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Metal",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-1WIEXDBHZLDDZ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "OSLog",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-2CUBHR9N9EGNS.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-2YD2I6RWG86IM.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Observation",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Observation-4ATBC3403VG0.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "QuartzCore",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-O9U19KHYHQEM.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Spatial",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-25RIGYOT7DGCR.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Swift",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Swift-WPIOK2IFP5KJ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "SwiftOnoneSupport",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftOnoneSupport-5UNL2RF77P0T.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUI",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-KX7XTHF56YL1.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUICore",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-3PSOMYUU6T1LX.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Symbols",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-SVKLOVP8TGN6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Synchronization",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Synchronization-1R2Z2DJKOSCRO.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "System",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/System-1VAMXGMT8MYIX.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-1A7SX9S95YUH4.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "XPC",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-2LKR4L6IRS83D.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-KPG8IVKARGSS.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Concurrency",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Concurrency-U8IFILNIJAM6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-2JNU21Y1W0IRV.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-1KCVGCLEPA6K9.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-37GLBUX8CXNFI.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_StringProcessing",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_StringProcessing-HP3BFZUWS7U9.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "os",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/os-I67XB9E44O2.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "simd",
+    "modulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/simd-3CJ6OT4BK8FEH.swiftmodule"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-7HMT1KKVGPPFJA095IVF9R9G8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Accessibility"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-5UBGUC6CY4RBDW60GKQOPGGJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AppKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-9XNDQ47F6O7DOBK47K1ZAJXNQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ApplicationServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-8ME8O6IXIDCJFBXD6JP97HQ11.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CFNetwork"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/cups.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-4BWQHIIUFY827A75TZVQYUONJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CUPS"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-D9TPPUM1OTK89W3W5GUFGN4WN.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ColorSync"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-7IA7BW52FNI2JRVUE6F0FR5CH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudioTypes-4FI9Q0YSRZ81X5WLY3970KW13.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudioTypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-3CRAALKF8D1UB394YNZ07CWPY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreData"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-22JRSAQUH9DZ3LBL78SQPPTNT.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-2NG41GVLSIBOX0A1X76SYWO8E.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreGraphics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-D6A8CEOZ6LCDNLW6F2J3EKSQ0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreImage"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-722U74Y2WHKS40DKPTXT9ZM4K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMedia"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-9EG9EUC002P1BRHMK5ESODJFA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-DD5GE9T1QJUJUOQMKNEY1DSG7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreText"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-CPJRIP0E12X4BCH17SKSH82K8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreTransferable"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-2ZUMNR4JVTT1YR8SQIAK1GHXF.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreVideo"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Darwin.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-C6X7WO2P7QS28N1U0KYCKA4I6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Darwin"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-9ZWU3LTYMPQB5S1RU9I99XEES.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DataDetection"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-CJZ4KLRJ76F0NPXEFMPO16SN1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DeveloperToolsSupport"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-O1ZC0SXATI54OQ4PX1ABZVJP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DiskArbitration"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/dispatch.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-9WIZO5OLWA2S0IYXSPWAHA9BX.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Dispatch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-EOUX352CDMHJ5HMLDVC63NF8Z.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Foundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-4QKW05LY4MN0K4Z17XRTUK56D.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-1QXRMHMR42DOOJCUK35FYPA5M.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOSurface"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-1BB632866TT5MCYUCZD9Y1EZ5.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ImageIO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinBasic.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-63COEVX2J8RGW11IY763LBT1M.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MachO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-6Y42QNATVUJDZH664USQZ3Q5P.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Metal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-4UAJOV496F6XWSPVPC4A0G0WU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OSLog"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/ObjectiveC.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-BDJS4C45NIPC3BM6ROAQKTEXF.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-ECLMM6T84NOA7EAGJ79ZUYS8R.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OpenGL"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-9P528C9BK4JPCKS1BTIIE3K6O.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "QuartzCore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Security-CPZP1UW5WWCAWR90B7ZOFPWK1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Security"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Spatial\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-AKH3DWE6QKGQRIDJHL03YD6OO.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Spatial"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-F1XYS69AW0BT08QZQ996JOFSF.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-9919YUWBU5J2E1RWA9DACN4NM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-3Z7ULNXC0I3QT9OQHZ8HJ9JNA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUICore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-TZUUM2V0O7G2MGGCMV9FVLXQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Symbols"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-6Z96Y7N64M83ODIMGBJ8FZ0NR.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/xpc.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-6TF0YQWM9DRU6ZVFPRGK1UBAX.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "XPC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-7AV509H15O3XDFM7F10IRISAI.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_AvailabilityInternal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-C2IAIZSOUD7SRCNDS7GF3T7BU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-DO7RVTQKX0J8XTIO26FUZDG5P.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_intrinsics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-AGJ77BQVQFNM5FACNBWOR8KZM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_inttypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-7VH3ELDZNSRM248EXWXZDDYEN.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_limits"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-679Z3XDMFUXUG2HSVQIL5INUQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdarg"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-6VVHQMA7KP4J6VEIVZF2W4YJ8.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdatomic"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-1VBNAEYHWQZ23OE2DMWGO7SJB.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdbool"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-637367M8874UK01U2OOVFHQDS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stddef"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-CZPY2AIYDTYZY3S3CH4BLGJCQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdint"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-6OIBPRQ7HHMPRCSSX367YNB6V.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_tgmath"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-CIW0KSG3A7O6A99IAPHEAWBPQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-403HL5DN2JKJ9UPW6YJMPGSSP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation3.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-4T9ETK9D9B27EE0MTZSY2QWJU.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-5AQ1LY655SI4SR7UH1BU2MZ6K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_SwiftConcurrencyShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/launch.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/launch-A0XD399MZ2IINWR2NQ1GEL77K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "launch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libDER\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-C9GOT58GR8H1OH5G8VT8MOTRL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libDER"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libkern.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-99OFBN1VAK7U2VGHKMWV7A7Y7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libkern"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/os-2G0NO1SK59IP49HFYUAO17LA6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-5HI1Z7QUF2NVT91O9W4UOBNH6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_object"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-3NSI860HJYR79FKT8HTZTUWBS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_workgroup"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-69XD6XLPDPEOCT81C6GZVOPIY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrauth"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-CJY0C3SI9WIVM7TS5JX7ZKS0K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrcheck"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/simd\/module.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/simd-DDXTW149OGOKSLLI4F19TPEXQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "simd"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/c_standard_library.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-5V9AX6F2NBBJIS5NHY6IQ2GSQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "string_h"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/eduardofgiovannini\/Documents\/GitHub\/CodexCheatSheet\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-D2LQUIZ01YIURS47BN376M3BY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "sys_types"
+  }
+]

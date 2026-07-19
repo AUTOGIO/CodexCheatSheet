@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'CodexCheatSheet-product' in project 'CodexCheatSheet'
+➜ Explicit dependency on target 'CodexCheatSheet' in project 'CodexCheatSheet'
+Target 'CodexCheatSheet' in project 'CodexCheatSheet' (no dependencies)
+Target 'CodexCheatSheet-product' in project 'CodexCheatSheet' (no dependencies)
