@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CheatSheetBrowserView: View {
     @State private var searchText = ""
-    @State private var selectedSection: CheatSection?
+    @State private var selectedSectionID: CheatSection.ID?
 
     private var filteredSections: [CheatSection] {
         guard !searchText.isEmpty else { return CheatSheetContent.sections }
@@ -10,23 +10,27 @@ struct CheatSheetBrowserView: View {
         return CheatSheetContent.sections.filter { $0.searchableText.contains(query) }
     }
 
+    private var selectedSection: CheatSection? {
+        filteredSections.first { $0.id == selectedSectionID } ?? filteredSections.first
+    }
+
     var body: some View {
         NavigationSplitView {
-            List(filteredSections, selection: $selectedSection) { section in
+            List(filteredSections, selection: $selectedSectionID) { section in
                 Label(section.title, systemImage: section.icon)
-                    .tag(section)
+                    .tag(section.id)
             }
             .searchable(text: $searchText, placement: .sidebar, prompt: "Search cheat sheet")
             .navigationSplitViewColumnWidth(min: 220, ideal: 240)
         } detail: {
-            if let section = selectedSection ?? filteredSections.first {
+            if let section = selectedSection {
                 SectionDetailView(section: section)
             } else {
                 ContentUnavailableView("No matches", systemImage: "magnifyingglass")
             }
         }
         .onAppear {
-            if selectedSection == nil { selectedSection = CheatSheetContent.sections.first }
+            if selectedSectionID == nil { selectedSectionID = CheatSheetContent.sections.first?.id }
         }
     }
 }

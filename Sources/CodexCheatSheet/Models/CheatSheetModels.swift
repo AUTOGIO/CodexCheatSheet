@@ -13,7 +13,7 @@ struct PromptTemplate: Identifiable, Hashable {
     let body: String
 }
 
-struct CheatSection: Identifiable, Hashable {
+struct CheatSection: Identifiable {
     let id = UUID()
     let title: String
     let icon: String
