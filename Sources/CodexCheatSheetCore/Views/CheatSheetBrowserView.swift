@@ -30,7 +30,18 @@ struct CheatSheetBrowserView: View {
             }
         }
         .onAppear {
-            if selectedSectionID == nil { selectedSectionID = CheatSheetContent.sections.first?.id }
+            syncSelectionWithFilter()
         }
+        .onChange(of: searchText) { _, _ in
+            syncSelectionWithFilter()
+        }
+    }
+
+    private func syncSelectionWithFilter() {
+        if let selectedSectionID,
+           filteredSections.contains(where: { $0.id == selectedSectionID }) {
+            return
+        }
+        selectedSectionID = filteredSections.first?.id
     }
 }

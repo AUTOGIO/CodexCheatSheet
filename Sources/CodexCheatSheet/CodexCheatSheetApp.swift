@@ -1,3 +1,4 @@
+import CodexCheatSheetCore
 import SwiftUI
 
 @main

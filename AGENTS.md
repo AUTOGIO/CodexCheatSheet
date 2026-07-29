@@ -6,14 +6,19 @@ SwiftUI macOS app (Swift Package). Prefer move over copy; do not redesign featur
 
 | Path | Purpose |
 |------|---------|
-| `Sources/` | Application code (Swift SPM equivalent of `src/`) |
-| `scripts/` | Runnable helpers (if added later) |
-| `config/` | Non-secret settings |
-| `data/` | CSV, Excel, exports, raw inputs |
-| `assets/` | Images, icons, logos |
-| `docs/` | Guides, design notes; `docs/prompts/` for AI prompts |
-| `tests/` | Tests only |
-| `archive/` | Obsolete files kept but not deleted |
+| `Sources/CodexCheatSheetCore/` | Models, static content, SwiftUI views (library) |
+| `Sources/CodexCheatSheet/` | `@main` app entry (executable) |
+| `Tests/CodexCheatSheetTests/` | Unit tests (`swift test`) |
+| `.github/workflows/` | CI (build + test on macOS) |
+| `docs/` | Audit and remediation reports only |
 | Root | `README.md`, `AGENTS.md`, `.gitignore`, `Package.swift` only |
 
-Do not invent new top-level folders without asking. Do not commit secrets or personal machine inventory.
+Do **not** create speculative top-level folders (`scripts/`, `config/`, `data/`, `assets/`, `archive/`) unless a concrete need is agreed.
+
+## Content ownership
+
+- Browser copy-ready text: `CheatSheetContent`
+- Builder `{{token}}` templates: `BuilderContent`
+- Update paired use-cases in both places when wording changes.
+
+Do not invent new top-level folders without asking. Do not commit secrets or personal machine inventory. Ignore local IDE workspace files (`*.code-workspace`).
