@@ -16,6 +16,12 @@ swift build
 swift run
 ```
 
+Or from zsh:
+
+```bash
+./scripts/launch-cheatsheet.zsh
+```
+
 Or open `Package.swift` in Xcode and press Cmd+R.
 
 ## Test
@@ -29,7 +35,7 @@ swift test
 - `Sources/CodexCheatSheetCore/` — models, static content (Codex + OpenClaw + Claude), and SwiftUI views (library)
 - `Sources/CodexCheatSheet/` — `@main` app entry (executable)
 - `Tests/CodexCheatSheetTests/` — unit tests
-- `scripts/` — ChatGPT paired watcher (install/uninstall LaunchAgent)
+- `scripts/` — launch helper (`launch-cheatsheet.zsh`) and ChatGPT paired watcher (install/uninstall LaunchAgent)
 - `Package.swift` — Swift package config
 - `AGENTS.md` — folder rules for this repo
 - `docs/` — audit and remediation reports
