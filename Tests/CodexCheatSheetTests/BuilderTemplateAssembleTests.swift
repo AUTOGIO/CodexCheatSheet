@@ -81,4 +81,40 @@ final class ContentSmokeTests: XCTestCase {
             XCTAssertTrue(builderNames.contains(name), "Missing builder template: \(name)")
         }
     }
+
+    func testOpenClawSectionsAndTemplatesPresent() {
+        let openClaw = CheatSheetContent.sections.filter { $0.title.hasPrefix("OpenClaw") }
+        XCTAssertEqual(openClaw.count, 6)
+        let templateCount = openClaw.flatMap(\.templates).count
+        XCTAssertEqual(templateCount, 60)
+        XCTAssertTrue(openClaw.contains { $0.title == "OpenClaw · Must-Use" })
+    }
+
+    func testClaudeSectionsPresent() {
+        let claude = CheatSheetContent.sections.filter { $0.title.hasPrefix("Claude ·") }
+        XCTAssertEqual(claude.count, 8)
+        let expected = [
+            "Claude · Slash Commands",
+            "Claude · File System Workflows",
+            "Claude · Connector Workflows",
+            "Claude · Document & Content",
+            "Claude · Scheduled Automations",
+            "Claude · Skills Fundamentals",
+            "Claude · Skill Authoring",
+            "Claude · Skills Testing & Patterns",
+        ]
+        XCTAssertEqual(claude.map(\.title), expected)
+    }
+
+    func testClaudeCoworkWorkflowTemplatesPresent() {
+        let byTitle = Dictionary(
+            uniqueKeysWithValues: CheatSheetContent.sections.map { ($0.title, $0) }
+        )
+        XCTAssertEqual(byTitle["Claude · File System Workflows"]?.templates.count, 8)
+        XCTAssertEqual(byTitle["Claude · Connector Workflows"]?.templates.count, 8)
+        XCTAssertEqual(byTitle["Claude · Document & Content"]?.templates.count, 8)
+        XCTAssertEqual(byTitle["Claude · Scheduled Automations"]?.templates.count, 6)
+        XCTAssertEqual(byTitle["Claude · Slash Commands"]?.rows.count, 10)
+        XCTAssertFalse(byTitle["Claude · Skill Authoring"]?.templates.isEmpty ?? true)
+    }
 }

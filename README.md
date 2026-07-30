@@ -26,9 +26,10 @@ swift test
 
 ## Where things live
 
-- `Sources/CodexCheatSheetCore/` — models, static content, and SwiftUI views (library)
+- `Sources/CodexCheatSheetCore/` — models, static content (Codex + OpenClaw + Claude), and SwiftUI views (library)
 - `Sources/CodexCheatSheet/` — `@main` app entry (executable)
 - `Tests/CodexCheatSheetTests/` — unit tests
+- `scripts/` — ChatGPT paired watcher (install/uninstall LaunchAgent)
 - `Package.swift` — Swift package config
 - `AGENTS.md` — folder rules for this repo
 - `docs/` — audit and remediation reports
@@ -36,5 +37,14 @@ swift test
 ## Content ownership
 
 - **Browser tab** (`CheatSheetContent`) owns copy-ready cheat-sheet wording (bracket placeholders).
+- Claude Cowork/Skills browser copy lives in `ClaudeContent` (same browser list as Codex/OpenClaw).
 - **Prompt Builder** (`BuilderContent`) owns parameterized `{{token}}` templates for fill-in assembly.
 - Keep both sides in sync when updating shared use-cases (e.g. Bug Fixing, Feature Writing); do not treat either as a generated transform of the other.
+
+## Auto-launch with ChatGPT (Codex)
+
+Paired with `/Applications/ChatGPT.app`: open ChatGPT → Cheat Sheet opens; quit ChatGPT → Cheat Sheet quits. Starts at login.
+
+1. Double-click `scripts/install-watcher.command`
+2. To stop: double-click `scripts/uninstall-watcher.command`
+3. Log: `logs/watcher.log`
