@@ -9,12 +9,12 @@ SwiftUI macOS app (Swift Package). Prefer move over copy; do not redesign featur
 | `Sources/CodexCheatSheetCore/` | Models, static content, SwiftUI views (library) |
 | `Sources/CodexCheatSheet/` | `@main` app entry (executable) |
 | `Tests/CodexCheatSheetTests/` | Unit tests (`swift test`) |
-| `scripts/` | App launcher (`launch-cheatsheet.zsh`), Stream Deck launcher (`make-streamdeck-launcher.command`), and ChatGPT paired watcher (install/uninstall LaunchAgent) |
+| `scripts/` | App launcher (`launch-cheatsheet.zsh`), Stream Deck launcher (`make-streamdeck-launcher.command`), and paired watcher for ChatGPT / Claude / Desktop Commander (install/uninstall LaunchAgent) |
 | `.github/workflows/` | CI (build + test on macOS) |
 | `docs/` | Audit and remediation reports only |
 | Root | `README.md`, `AGENTS.md`, `.gitignore`, `Package.swift` only |
 
-Do **not** create speculative top-level folders (`config/`, `data/`, `assets/`, `archive/`) unless a concrete need is agreed. `scripts/` exists for the ChatGPT paired watcher.
+Do **not** create speculative top-level folders (`config/`, `data/`, `assets/`, `archive/`) unless a concrete need is agreed. `scripts/` exists for the paired partner-app watcher.
 
 ## Content ownership
 

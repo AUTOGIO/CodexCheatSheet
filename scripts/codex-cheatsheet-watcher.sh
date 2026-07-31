@@ -6,9 +6,14 @@ REPO_ROOT="${REPO_ROOT:-$(cd "$SCRIPT_DIR/.." && pwd)}"
 BINARY="$REPO_ROOT/.build/debug/CodexCheatSheet"
 LOG_DIR="$REPO_ROOT/logs"
 LOG_FILE="$LOG_DIR/watcher.log"
-POLL_SECONDS=3
-CHATGPT_BUNDLE_ID="com.openai.codex"
-CHATGPT_APP="/Applications/ChatGPT.app"
+POLL_SECONDS="${POLL_SECONDS:-3}"
+
+# Partner apps: bundle_id|app_path (Cheat Sheet stays up while ANY are running)
+PARTNERS=(
+  "com.openai.codex|/Applications/ChatGPT.app"
+  "com.anthropic.claudefordesktop|/Applications/Claude.app"
+  "app.desktopcommander|/Applications/Desktop Commander.app"
+)
 
 mkdir -p "$LOG_DIR"
 
@@ -16,9 +21,23 @@ log() {
   echo "$(date '+%Y-%m-%d %H:%M:%S') $*" >> "$LOG_FILE"
 }
 
-chatgpt_running() {
-  [[ -d "$CHATGPT_APP" ]] || return 1
-  osascript -e "application id \"$CHATGPT_BUNDLE_ID\" is running" 2>/dev/null | grep -qi true
+app_running() {
+  local bundle_id="$1"
+  local app_path="$2"
+  [[ -d "$app_path" ]] || return 1
+  osascript -e "application id \"$bundle_id\" is running" 2>/dev/null | grep -qi true
+}
+
+any_partner_running() {
+  local entry bundle_id app_path
+  for entry in "${PARTNERS[@]}"; do
+    bundle_id="${entry%%|*}"
+    app_path="${entry#*|}"
+    if app_running "$bundle_id" "$app_path"; then
+      return 0
+    fi
+  done
+  return 1
 }
 
 cheatsheet_running() {
@@ -40,10 +59,31 @@ quit_cheatsheet() {
   pkill -x "CodexCheatSheet" 2>/dev/null || true
 }
 
-log "Watcher started (repo=$REPO_ROOT)"
+if [[ "${1:-}" == "--check" ]]; then
+  echo "repo=$REPO_ROOT"
+  echo "binary=$BINARY ($([[ -x $BINARY ]] && echo ok || echo missing))"
+  for entry in "${PARTNERS[@]}"; do
+    bundle_id="${entry%%|*}"
+    app_path="${entry#*|}"
+    if [[ -d "$app_path" ]]; then
+      state=$(app_running "$bundle_id" "$app_path" && echo running || echo stopped)
+      echo "partner ok: $app_path ($bundle_id) [$state]"
+    else
+      echo "partner missing: $app_path ($bundle_id)"
+    fi
+  done
+  if any_partner_running; then
+    echo "any_partner_running=yes"
+  else
+    echo "any_partner_running=no"
+  fi
+  exit 0
+fi
+
+log "Watcher started (repo=$REPO_ROOT partners=${#PARTNERS[@]})"
 
 while true; do
-  if chatgpt_running; then
+  if any_partner_running; then
     if ! cheatsheet_running; then
       launch_cheatsheet || true
     fi

@@ -60,6 +60,7 @@ if ! launchctl print "gui/$(id -u)/$LABEL" >/dev/null 2>&1; then
 fi
 
 echo "Installed and started: $LABEL"
-echo "Open ChatGPT.app — Codex Cheat Sheet should follow within a few seconds."
+echo "Open ChatGPT, Claude, or Desktop Commander — Codex Cheat Sheet should follow within a few seconds."
+echo "Cheat Sheet quits only when all three partner apps are closed."
 echo "Log: $REPO_ROOT/logs/watcher.log"
 read -r -p "Press Enter to close…"

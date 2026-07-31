@@ -54,10 +54,11 @@ swift test
 - **Prompt Builder** (`BuilderContent`) owns parameterized `{{token}}` templates for fill-in assembly.
 - Keep both sides in sync when updating shared use-cases (e.g. Bug Fixing, Feature Writing); do not treat either as a generated transform of the other.
 
-## Auto-launch with ChatGPT (Codex)
+## Auto-launch with partner apps
 
-Paired with `/Applications/ChatGPT.app`: open ChatGPT → Cheat Sheet opens; quit ChatGPT → Cheat Sheet quits. Starts at login.
+Paired with **ChatGPT** (`/Applications/ChatGPT.app`), **Claude**, and **Desktop Commander**: open any of them → Cheat Sheet opens; Cheat Sheet quits only when **all** are closed. Starts at login.
 
 1. Double-click `scripts/install-watcher.command`
 2. To stop: double-click `scripts/uninstall-watcher.command`
 3. Log: `logs/watcher.log`
+4. Config check: `./scripts/codex-cheatsheet-watcher.sh --check`
