@@ -4,8 +4,19 @@ import AppKit
 #endif
 
 struct TemplateCardView: View {
+    let sectionTitle: String
     let template: PromptTemplate
+    @EnvironmentObject private var favorites: FavoritesStore
+    @EnvironmentObject private var recents: RecentsStore
     @State private var copied = false
+
+    private var key: String {
+        ContentKeys.browserTemplate(sectionTitle: sectionTitle, templateTitle: template.title)
+    }
+
+    private var isFavorite: Bool {
+        favorites.contains(key)
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -14,7 +25,20 @@ struct TemplateCardView: View {
                     .font(.headline)
                 Spacer()
                 Button {
+                    favorites.toggle(key)
+                } label: {
+                    Image(systemName: isFavorite ? "star.fill" : "star")
+                }
+                .buttonStyle(.borderless)
+                .help(isFavorite ? "Remove from favorites" : "Add to favorites")
+                Button {
                     copyToPasteboard(template.body)
+                    recents.record(
+                        key: key,
+                        title: template.title,
+                        source: .browser,
+                        text: template.body
+                    )
                     copied = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { copied = false }
                 } label: {

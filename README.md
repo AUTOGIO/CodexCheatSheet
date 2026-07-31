@@ -16,7 +16,19 @@ swift build
 swift run
 ```
 
+Or from zsh:
+
+```bash
+./scripts/launch-cheatsheet.zsh
+```
+
 Or open `Package.swift` in Xcode and press Cmd+R.
+
+### Elgato Stream Deck
+
+1. Double-click `scripts/make-streamdeck-launcher.command` (creates `Launch Codex Cheat Sheet.app` and installs it to `~/Applications/`).
+2. In Stream Deck software: drag **System → Open** onto a button → choose `~/Applications/Launch Codex Cheat Sheet.app`.
+3. Optional title: **Cheat Sheet**.
 
 ## Test
 
@@ -26,9 +38,10 @@ swift test
 
 ## Where things live
 
-- `Sources/CodexCheatSheetCore/` — models, static content, and SwiftUI views (library)
+- `Sources/CodexCheatSheetCore/` — models, static content (Codex + OpenClaw + Claude), and SwiftUI views (library)
 - `Sources/CodexCheatSheet/` — `@main` app entry (executable)
 - `Tests/CodexCheatSheetTests/` — unit tests
+- `scripts/` — launch helpers (`launch-cheatsheet.zsh`, Stream Deck launcher), and ChatGPT paired watcher (install/uninstall LaunchAgent)
 - `Package.swift` — Swift package config
 - `AGENTS.md` — folder rules for this repo
 - `docs/` — audit and remediation reports
@@ -36,5 +49,16 @@ swift test
 ## Content ownership
 
 - **Browser tab** (`CheatSheetContent`) owns copy-ready cheat-sheet wording (bracket placeholders).
+- Claude Cowork/Skills browser copy lives in `ClaudeContent` (same browser list as Codex/OpenClaw).
+- Tool-agnostic power prompts (#51–100) live in `ToolAgnosticContent` (same browser list).
 - **Prompt Builder** (`BuilderContent`) owns parameterized `{{token}}` templates for fill-in assembly.
 - Keep both sides in sync when updating shared use-cases (e.g. Bug Fixing, Feature Writing); do not treat either as a generated transform of the other.
+
+## Auto-launch with partner apps
+
+Paired with **ChatGPT** (`/Applications/ChatGPT.app`), **Claude**, and **Desktop Commander**: open any of them → Cheat Sheet opens; Cheat Sheet quits only when **all** are closed. Starts at login.
+
+1. Double-click `scripts/install-watcher.command`
+2. To stop: double-click `scripts/uninstall-watcher.command`
+3. Log: `logs/watcher.log`
+4. Config check: `./scripts/codex-cheatsheet-watcher.sh --check`

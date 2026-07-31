@@ -1,20 +1,66 @@
 import SwiftUI
 
 struct PromptBuilderView: View {
-    @State private var selectedTemplateID: BuilderTemplate.ID?
-    @State private var fieldValues: [String: String] = [:]
+    @EnvironmentObject private var session: BuilderSessionStore
+    @EnvironmentObject private var favorites: FavoritesStore
+    @EnvironmentObject private var recents: RecentsStore
+    @EnvironmentObject private var history: BuilderHistoryStore
+
     @State private var copied = false
+    @State private var sidebarSelection: String?
 
     private var selectedTemplate: BuilderTemplate? {
-        BuilderContent.templates.first { $0.id == selectedTemplateID } ?? BuilderContent.templates.first
+        session.selectedTemplate
     }
 
     var body: some View {
         NavigationSplitView {
-            List(BuilderContent.templates, selection: $selectedTemplateID) { template in
-                Label(template.name, systemImage: template.icon).tag(template.id)
+            List(selection: $sidebarSelection) {
+                Section("Templates") {
+                    ForEach(BuilderContent.templates) { template in
+                        HStack {
+                            Label(template.name, systemImage: template.icon)
+                            Spacer(minLength: 8)
+                            Button {
+                                favorites.toggle(ContentKeys.builderTemplate(name: template.name))
+                            } label: {
+                                Image(systemName: favorites.contains(ContentKeys.builderTemplate(name: template.name))
+                                      ? "star.fill" : "star")
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                        .tag("template:\(template.name)")
+                    }
+                }
+                if !history.entries.isEmpty {
+                    Section("History") {
+                        ForEach(history.entries) { entry in
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(entry.templateName).lineLimit(1)
+                                Text(entry.assembledPreview)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(2)
+                            }
+                            .tag("history:\(entry.id.uuidString)")
+                        }
+                    }
+                }
             }
             .navigationSplitViewColumnWidth(min: 220, ideal: 240)
+            .onChange(of: sidebarSelection) { _, newValue in
+                handleSidebarSelection(newValue)
+            }
+            .onAppear {
+                if sidebarSelection == nil {
+                    sidebarSelection = "template:\(session.selectedTemplateName)"
+                }
+            }
+            .onChange(of: session.selectedTemplateName) { _, name in
+                if sidebarSelection?.hasPrefix("history:") != true {
+                    sidebarSelection = "template:\(name)"
+                }
+            }
         } detail: {
             if let selectedTemplate {
                 HSplitView {
@@ -25,8 +71,21 @@ struct PromptBuilderView: View {
                 ContentUnavailableView("No templates", systemImage: "doc.text")
             }
         }
-        .onAppear {
-            if selectedTemplateID == nil { selectedTemplateID = BuilderContent.templates.first?.id }
+    }
+
+    private func handleSidebarSelection(_ value: String?) {
+        guard let value else { return }
+        if value.hasPrefix("template:") {
+            let name = String(value.dropFirst("template:".count))
+            session.selectTemplate(named: name)
+            return
+        }
+        if value.hasPrefix("history:") {
+            let idString = String(value.dropFirst("history:".count))
+            if let id = UUID(uuidString: idString),
+               let entry = history.entries.first(where: { $0.id == id }) {
+                session.applyHistory(entry)
+            }
         }
     }
 
@@ -51,7 +110,7 @@ struct PromptBuilderView: View {
                 }
 
                 Button("Clear fields") {
-                    for field in template.fields { fieldValues[field.key] = "" }
+                    session.clearFields(for: template)
                 }
                 .buttonStyle(.bordered)
             }
@@ -66,16 +125,15 @@ struct PromptBuilderView: View {
                 Text("Assembled Prompt").font(.headline)
                 Spacer()
                 Button {
-                    copyToPasteboard(template.assemble(with: fieldValues))
-                    copied = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { copied = false }
+                    performCopy(template: template)
                 } label: {
                     Label(copied ? "Copied" : "Copy Prompt", systemImage: copied ? "checkmark" : "doc.on.doc")
                 }
                 .buttonStyle(.borderedProminent)
+                .keyboardShortcut(.return, modifiers: .command)
             }
             ScrollView {
-                Text(template.assemble(with: fieldValues))
+                Text(template.assemble(with: session.fieldValues))
                     .font(.system(.callout, design: .monospaced))
                     .textSelection(.enabled)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -87,10 +145,33 @@ struct PromptBuilderView: View {
         .frame(minWidth: 380)
     }
 
+    private func performCopy(template: BuilderTemplate) {
+        let assembled = template.assemble(with: session.fieldValues)
+        copyToPasteboard(assembled)
+        session.rememberAfterCopy(templateName: template.name, fieldValues: session.fieldValues)
+        history.record(
+            templateName: template.name,
+            fieldValues: session.fieldValues,
+            assembled: assembled
+        )
+        recents.record(
+            key: ContentKeys.builderTemplate(name: template.name),
+            title: template.name,
+            source: .builder,
+            text: assembled
+        )
+        copied = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { copied = false }
+    }
+
     private func bindingFor(_ key: String) -> Binding<String> {
         Binding(
-            get: { fieldValues[key] ?? "" },
-            set: { fieldValues[key] = $0 }
+            get: { session.fieldValues[key] ?? "" },
+            set: { newValue in
+                var next = session.fieldValues
+                next[key] = newValue
+                session.fieldValues = next
+            }
         )
     }
 }

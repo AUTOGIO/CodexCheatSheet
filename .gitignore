@@ -27,3 +27,6 @@ tmp/
 
 # Local IDE workspace (not part of the product)
 *.code-workspace
+
+# Generated Stream Deck launcher (rebuild via scripts/make-streamdeck-launcher.command)
+scripts/Launch Codex Cheat Sheet.app/

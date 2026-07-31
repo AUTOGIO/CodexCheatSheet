@@ -34,7 +34,7 @@ struct SectionDetailView: View {
                 }
 
                 ForEach(section.templates) { template in
-                    TemplateCardView(template: template)
+                    TemplateCardView(sectionTitle: section.title, template: template)
                 }
             }
             .padding(24)
