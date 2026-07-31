@@ -1,7 +1,7 @@
 import Foundation
 
 enum CheatSheetContent {
-    static let sections: [CheatSection] = codexSections + OpenClawContent.sections + ClaudeContent.sections
+    static let sections: [CheatSection] = codexSections + OpenClawContent.sections + ToolAgnosticContent.sections + ClaudeContent.sections
 
     private static let codexSections: [CheatSection] = [
         CheatSection(

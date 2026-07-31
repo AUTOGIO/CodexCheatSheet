@@ -9,7 +9,7 @@ SwiftUI macOS app (Swift Package). Prefer move over copy; do not redesign featur
 | `Sources/CodexCheatSheetCore/` | Models, static content, SwiftUI views (library) |
 | `Sources/CodexCheatSheet/` | `@main` app entry (executable) |
 | `Tests/CodexCheatSheetTests/` | Unit tests (`swift test`) |
-| `scripts/` | App launcher (`launch-cheatsheet.zsh`) and ChatGPT paired watcher (install/uninstall LaunchAgent) |
+| `scripts/` | App launcher (`launch-cheatsheet.zsh`), Stream Deck launcher (`make-streamdeck-launcher.command`), and ChatGPT paired watcher (install/uninstall LaunchAgent) |
 | `.github/workflows/` | CI (build + test on macOS) |
 | `docs/` | Audit and remediation reports only |
 | Root | `README.md`, `AGENTS.md`, `.gitignore`, `Package.swift` only |
@@ -18,7 +18,7 @@ Do **not** create speculative top-level folders (`config/`, `data/`, `assets/`, 
 
 ## Content ownership
 
-- Browser copy-ready text: `CheatSheetContent` (aggregates Codex + `OpenClawContent` + `ClaudeContent`)
+- Browser copy-ready text: `CheatSheetContent` (aggregates Codex + `OpenClawContent` + `ToolAgnosticContent` + `ClaudeContent`)
 - Builder `{{token}}` templates: `BuilderContent`
 - Update paired use-cases in both places when wording changes.
 

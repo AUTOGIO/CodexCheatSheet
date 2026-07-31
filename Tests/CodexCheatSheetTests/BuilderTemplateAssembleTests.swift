@@ -90,6 +90,22 @@ final class ContentSmokeTests: XCTestCase {
         XCTAssertTrue(openClaw.contains { $0.title == "OpenClaw · Must-Use" })
     }
 
+    func testToolAgnosticPowerSectionsAndTemplatesPresent() {
+        let power = CheatSheetContent.sections.filter { $0.title.hasPrefix("Power ·") }
+        XCTAssertEqual(power.count, 6)
+        let templateCount = power.flatMap(\.templates).count
+        XCTAssertEqual(templateCount, 50)
+        let expected = [
+            "Power · macOS Operations",
+            "Power · Repo / Git / Skills",
+            "Power · AI / MCP / Runtime",
+            "Power · Apple / Home Automation",
+            "Power · Executive / Strategic",
+            "Power · Personal Productivity",
+        ]
+        XCTAssertEqual(power.map(\.title), expected)
+    }
+
     func testClaudeSectionsPresent() {
         let claude = CheatSheetContent.sections.filter { $0.title.hasPrefix("Claude ·") }
         XCTAssertEqual(claude.count, 8)

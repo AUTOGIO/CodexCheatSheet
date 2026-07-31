@@ -24,6 +24,12 @@ Or from zsh:
 
 Or open `Package.swift` in Xcode and press Cmd+R.
 
+### Elgato Stream Deck
+
+1. Double-click `scripts/make-streamdeck-launcher.command` (creates `Launch Codex Cheat Sheet.app` and installs it to `~/Applications/`).
+2. In Stream Deck software: drag **System → Open** onto a button → choose `~/Applications/Launch Codex Cheat Sheet.app`.
+3. Optional title: **Cheat Sheet**.
+
 ## Test
 
 ```bash
@@ -35,7 +41,7 @@ swift test
 - `Sources/CodexCheatSheetCore/` — models, static content (Codex + OpenClaw + Claude), and SwiftUI views (library)
 - `Sources/CodexCheatSheet/` — `@main` app entry (executable)
 - `Tests/CodexCheatSheetTests/` — unit tests
-- `scripts/` — launch helper (`launch-cheatsheet.zsh`) and ChatGPT paired watcher (install/uninstall LaunchAgent)
+- `scripts/` — launch helpers (`launch-cheatsheet.zsh`, Stream Deck launcher), and ChatGPT paired watcher (install/uninstall LaunchAgent)
 - `Package.swift` — Swift package config
 - `AGENTS.md` — folder rules for this repo
 - `docs/` — audit and remediation reports
@@ -44,6 +50,7 @@ swift test
 
 - **Browser tab** (`CheatSheetContent`) owns copy-ready cheat-sheet wording (bracket placeholders).
 - Claude Cowork/Skills browser copy lives in `ClaudeContent` (same browser list as Codex/OpenClaw).
+- Tool-agnostic power prompts (#51–100) live in `ToolAgnosticContent` (same browser list).
 - **Prompt Builder** (`BuilderContent`) owns parameterized `{{token}}` templates for fill-in assembly.
 - Keep both sides in sync when updating shared use-cases (e.g. Bug Fixing, Feature Writing); do not treat either as a generated transform of the other.
 
